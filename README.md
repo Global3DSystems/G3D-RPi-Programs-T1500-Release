@@ -17,6 +17,7 @@ it may appear as "G3D-RPi-Programs-T15000-Release-master.zip(1)". File name must
 * Restart the printer.
 * A prompt will be shown in the touch screen, select it will scan the version and you may choose to update via the latest version or downgrade it.
 * Wait for the update finish message to appear. Reboot is required to apply the updates.
+* The program will still read the update file if it is not deleted in the flash drive. Delete it to stop prompting the update.
 
 ### How to Update via Over the Air?
 
