@@ -19,6 +19,8 @@ it may appear as "G3D-RPi-Programs-T15000-Release-master.zip(1)". File name must
 * Wait for the update finish message to appear. Reboot is required to apply the updates.
 * The program will still read the update file if it is not deleted in the flash drive. Delete it to stop prompting the update.
 
+#
+
 ### How to Update via Over the Air?
 
 * The program is prioritizing USB update, if you have a flash drive plugged in, remove it first
@@ -30,6 +32,7 @@ so the cloud update will be prioritized.
 swtitch to Wi-Fi mode/connect to a network.
 * Update will be downloaded if you have an internet connection, else it will stop.
 * After the update, a success message will be shown and will ask for reboot.
+#
 
 ### My updates failed, what to do?
 
