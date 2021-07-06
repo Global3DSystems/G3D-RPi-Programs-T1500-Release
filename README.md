@@ -21,6 +21,8 @@ it may appear as "G3D-RPi-Programs-T15000-Release-master.zip(1)". File name must
 
 ### How to Update via Over the Air?
 
+* The program is prioritizing USB update, if you have a flash drive plugged in, remove it first
+so the cloud update will be prioritized.
 * Using the touch screen, navigate to Settings->About->Update
 * Wait for the update window to show.
 * Click "Continue" button to check for updates.
