@@ -1,0 +1,72 @@
+<RCC>
+    <qresource prefix="/">
+        <file>build/resources/images/Back Button/back button-blue.png</file>
+        <file>build/resources/images/Back Button/back button-gray.png</file>
+        <file>build/resources/images/Back Button/back button-green.png</file>
+        <file>build/resources/images/Back Button/back button-white.png</file>
+        <file>build/resources/images/Blue Icon/infoCureTime.png</file>
+        <file>build/resources/images/Blue Icon/infoFileName.png</file>
+        <file>build/resources/images/Blue Icon/infoLayers.png</file>
+        <file>build/resources/images/Blue Icon/infoMaterial.png</file>
+        <file>build/resources/images/Blue Icon/infoTime.png</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P1.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P10.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P11.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P12.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P13.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P14.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P15.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P16.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P17.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P18.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P2.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P3.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P4.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P5.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P6.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P7.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P8.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/P9.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/UI-01.jpg</file>
+        <file>build/resources/images/Calibration and Printing Sequence/UI-01.png</file>
+        <file>build/resources/images/qr_code/g3d_website_qrcode.png</file>
+        <file>build/resources/images/Red Icon/infoCureTime.png</file>
+        <file>build/resources/images/Red Icon/infoFileName.png</file>
+        <file>build/resources/images/Red Icon/infoLayers.png</file>
+        <file>build/resources/images/Red Icon/infoMaterial.png</file>
+        <file>build/resources/images/Red Icon/infoTime.png</file>
+        <file>build/resources/images/sample_projection/full_76XY.jpg</file>
+        <file>build/resources/images/sample_projection/grid_76XY.jpg</file>
+        <file>build/resources/images/sample_projection/rectangle_76XY.jpg</file>
+        <file>build/resources/images/White Icon/aboutus_icon.png</file>
+        <file>build/resources/images/White Icon/controlOff.png</file>
+        <file>build/resources/images/White Icon/controlWhite.png</file>
+        <file>build/resources/images/White Icon/downWhite.png</file>
+        <file>build/resources/images/White Icon/fanOff.png</file>
+        <file>build/resources/images/White Icon/fanOn.png</file>
+        <file>build/resources/images/White Icon/fillWhite.png</file>
+        <file>build/resources/images/White Icon/homeWhite.png</file>
+        <file>build/resources/images/White Icon/ledOffWhite.png</file>
+        <file>build/resources/images/White Icon/ledOnWhite.png</file>
+        <file>build/resources/images/White Icon/powerOff.png</file>
+        <file>build/resources/images/White Icon/powerWhite.png</file>
+        <file>build/resources/images/White Icon/printOff.png</file>
+        <file>build/resources/images/White Icon/rectangleWhite.png</file>
+        <file>build/resources/images/White Icon/settingOff.png</file>
+        <file>build/resources/images/White Icon/settingsNetworkOff.png</file>
+        <file>build/resources/images/White Icon/settingsRecalibrationOff.png</file>
+        <file>build/resources/images/White Icon/settingWhite.png</file>
+        <file>build/resources/images/White Icon/square_squareWhite.png</file>
+        <file>build/resources/images/White Icon/squareWhite.png</file>
+        <file>build/resources/images/White Icon/themeIcon.png</file>
+        <file>build/resources/images/White Icon/tiltWhite.png</file>
+        <file>build/resources/images/White Icon/untilltWhite.png</file>
+        <file>build/resources/images/White Icon/upWhite.png</file>
+        <file>build/resources/images/Swipe Icon/swipe_area.png</file>
+        <file>build/resources/images/Swipe Icon/proceed.png</file>
+        <file>build/resources/images/Swipe Icon/up_get_file.png</file>
+        <file>build/resources/images/Swipe Icon/down_get_file.png</file>
+        <file>build/resources/images/Swipe Icon/up_get_file_white.png</file>
+        <file>build/resources/images/Swipe Icon/down_get_file_white.png</file>
+    </qresource>
+</RCC>

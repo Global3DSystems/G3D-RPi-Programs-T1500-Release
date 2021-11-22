@@ -1,0 +1,40 @@
+<div class="row h-100">
+    <div class="col my-auto text-center">
+        <div class="container">
+
+            <br>
+            <h1>Select USB Files</h1>
+
+            <div class="row control-box">
+                <div class="col-md control-sub-box">
+
+                    <form action="/printinfo" method="POST" style="display: inline;">
+
+                        <div class="select-box mb-4">
+
+                            <select class="form-select form-select-lg mb-3" size=10 name="g3d-file-list"
+                                aria-label=".form-select-lg example" style="width: 100%;">
+
+
+                                {loop row}
+                                <option>{row.name}</option>
+                                {end row}
+
+                            </select>
+
+                        </div>
+
+
+                        <input type="submit" class="btn shadow-none" method="post" name="back-usb-file-button" value="BACK">
+                        <input type="submit" class="btn shadow-none" method="post" name="refresh-usb-file-button" value="REFRESH">
+                        <input type="submit" class="btn shadow-none" method="post" name="select-usb-file-button" value="SELECT">
+                         
+                    </form>
+
+                   
+
+                </div>
+
+            </div>
+        </div>
+    </div>
