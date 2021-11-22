@@ -126,7 +126,7 @@ class MainWindow(QtWidgets.QMainWindow):
         
         try:
              
-            current_folder = "G3D-RPi-Programs-Release-T1500-master/build/resources"
+            current_folder = "G3D-RPi-Programs-T1500-Release-master/build/resources"
             current_update = os.path.join(home_dir, current_folder)
             full_path = os.path.join(current_update, "g3d_rpi_programs.config")
 
