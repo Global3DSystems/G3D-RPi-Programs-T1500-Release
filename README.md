@@ -23,23 +23,10 @@ it may appear as "G3D-RPi-Programs-T15000-Release-master.zip(1)". File name must
 
 ### How to Update via Over the Air?
 
-* The program is prioritizing USB update, if you have a flash drive plugged in, remove it first
-so the cloud update will be prioritized.
-* Using the touch screen, navigate to Settings->About->Update
-* Wait for the update window to show.
-* Click "Continue" button to check for updates.
-* Make sure you are connected to the internet. Navigate to Settings->Network and 
-swtitch to Wi-Fi mode/connect to a network.
-* Update will be downloaded if you have an internet connection, else it will stop.
-* After the update, a success message will be shown and will ask for reboot.
+* G3D T1500 Printer has no touch screen. There is no interface for cloud update so it is not supported.
 #
 
 ### My updates failed, what to do?
 
 * If the usb update has been interrupted due to power interruption, 
 you can simply update it again by just turning on the printer and the usb plugged in.
-* If the over the air download update has been interrupted due to power interruption,
-you can simply repeat the process again when printer turns on or update via USB.
-* If you cannot download updates due to slow connection, use USB update instead.
-Program won't allow downloads when you have less than 100 kbps download speed.
-* If download stucks, you probably have slow internet, consider using USB update only.
