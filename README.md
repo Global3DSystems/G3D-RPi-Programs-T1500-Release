@@ -1,6 +1,6 @@
 ![G3D logo](documentation/images/g3d_logo.png)
 
-# G3D-RPi-Programs-T15000
+# G3D-RPi-Programs-T1500
 This is the public respository of the released version of programs 
 for G3D T1500 Printer in Raspberry Pi. It is used for updating the
 printer via USB update or over the air update.
