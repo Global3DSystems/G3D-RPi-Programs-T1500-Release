@@ -352,12 +352,13 @@ public:
     QLabel *finished_filename_label;
     QLabel *finished_settings_label;
     QLabel *elapsed_time_label;
+    QWidget *black_widget;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(16000, 500);
+        MainWindow->resize(16000, 480);
         MainWindow->setAnimated(true);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
@@ -2672,6 +2673,11 @@ public:
         elapsed_time_label->setObjectName(QStringLiteral("elapsed_time_label"));
         elapsed_time_label->setGeometry(QRect(330, 160, 241, 31));
         elapsed_time_label->setFont(font30);
+        black_widget = new QWidget(centralwidget);
+        black_widget->setObjectName(QStringLiteral("black_widget"));
+        black_widget->setGeometry(QRect(0, 0, 800, 480));
+        black_widget->setStyleSheet(QLatin1String("background-color: rgb(0, 0, 0);\n"
+"border-style:none;"));
         MainWindow->setCentralWidget(centralwidget);
         title_menu_widget->raise();
         main_widget->raise();
@@ -2692,6 +2698,7 @@ public:
         button_widget->raise();
         manual_menu_widget->raise();
         modify_curing_time_widget->raise();
+        black_widget->raise();
 
         retranslateUi(MainWindow);
 

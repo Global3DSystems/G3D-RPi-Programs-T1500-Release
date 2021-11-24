@@ -1,5 +1,5 @@
 name=Shape-Box.g3d
 current-layer=1 / 210
-remaining-time=1 hr 7 min
+remaining-time=1 hr 4 min
 progress=0
 current_image_path=/files/mini_projection.png

@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>16000</width>
-    <height>500</height>
+    <height>480</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -8237,6 +8237,20 @@ color: rgb(255, 255, 255);
      </widget>
     </widget>
    </widget>
+   <widget class="QWidget" name="black_widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>480</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);
+border-style:none;</string>
+    </property>
+   </widget>
    <zorder>title_menu_widget</zorder>
    <zorder>main_widget</zorder>
    <zorder>control_widget</zorder>
@@ -8256,6 +8270,7 @@ color: rgb(255, 255, 255);
    <zorder>button_widget</zorder>
    <zorder>manual_menu_widget</zorder>
    <zorder>modify_curing_time_widget</zorder>
+   <zorder>black_widget</zorder>
   </widget>
  </widget>
  <resources>
