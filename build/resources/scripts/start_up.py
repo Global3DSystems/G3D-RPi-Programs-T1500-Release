@@ -55,6 +55,7 @@ CURRENT_PROFRAM_CONFIG_PATH = os.path.join(CURRENT_PROGRAM_DIR, "build", "resour
 UPDATE_PROGRAM_CONFIG_PATH = os.path.join(UPDATE_FOLDER_DIR, "build", "resources", "g3d_rpi_programs.config")
 BURN_IN_FOLDER_NAME = "G3D-Burn-In-Test"
 CURRENT_BURN_IN_PATH = os.path.join(HOME_DIR, BURN_IN_FOLDER_NAME)
+BEEP_SCRIPT_PATH = os.path.join(CURRENT_PROGRAM_DIR, "build", "resources", "scripts", "buzz.py")
 
 # Variable that depends on the update file and current file.
 ZIP_FILE_DIR = ""
@@ -248,6 +249,10 @@ class MainWindow(QtWidgets.QMainWindow):
             shutil.copytree(UPDATE_FOLDER_DIR, CURRENT_PROGRAM_DIR)
 
             self.update_message_with_delay("Update finished! You need to restart\nthe printer to apply the full updates.\n\nPress Yes to restart the printer.")
+            
+            # Beep script, 3 beeps 0.5 seconds delay.
+            subprocess.run(["python3", BEEP_SCRIPT_PATH, "3", "0.5", "1"])
+             
 
     def cloud_update_apply(self):
         self.message_label.resize(701, 320)

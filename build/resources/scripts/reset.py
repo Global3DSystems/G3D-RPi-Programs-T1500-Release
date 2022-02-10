@@ -3,7 +3,7 @@ import sys
 import subprocess
 
 
-dir_path, _ =  os.path.split(sys.argv[0])
+dir_path, _ =  os.path.split(sys.argv[0]) # Scripts path.
 rpi_config_path = "/boot/config.txt"
 g3d_config_path = os.path.join(dir_path, "..", "g3d_rpi_programs.config")
 config_network_script_path = os.path.join(dir_path, "configure_network.py")
@@ -17,8 +17,8 @@ def set_default_config():
     # Set theme to blue.
     write_config(g3d_config_path, "theme", "blue")
 
-    # Set printer name to G3D T2000.
-    write_config(g3d_config_path, "printer_name", "G3D T2000")
+    # Set printer name to G3D T1500.
+    write_config(g3d_config_path, "printer_name", "G3D T1500")
 
     # Set network mode text to hotspot.
     write_config(g3d_config_path, "network_mode", "hotspot")
@@ -31,7 +31,7 @@ def set_default_hotspot():
     if serial_num != "":
         default_ssid = serial_num
     else:
-        default_ssid = "G3D-T2000-Printer"
+        default_ssid = "G3D-T1500-Printer"
         
     default_pass = "g3dTestPass"
 
