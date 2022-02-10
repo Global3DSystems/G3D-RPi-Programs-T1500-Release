@@ -250,8 +250,8 @@ class MainWindow(QtWidgets.QMainWindow):
 
             self.update_message_with_delay("Update finished! You need to restart\nthe printer to apply the full updates.\n\nPress Yes to restart the printer.")
             
-            # Beep script, 2 beeps 0.5 seconds delay.
-            subprocess.run(["python3", BEEP_SCRIPT_PATH, "2", "0.5", "1"])
+            # Beep script, 2 beeps 0.1 seconds delay.
+            subprocess.run(["python3", BEEP_SCRIPT_PATH, "2", "0.1", "1"])
              
 
     def cloud_update_apply(self):
@@ -395,8 +395,8 @@ if __name__ == "__main__":
 
         # Programatically click the buttons so the script on all printers remains the same structure.
         
-        # Beep script, 2 beeps 0.5 seconds delay.
-        subprocess.run(["python3", BEEP_SCRIPT_PATH, "2", "0.5", "1"])
+        # Beep script, 2 beeps 0.1 seconds delay.
+        subprocess.run(["python3", BEEP_SCRIPT_PATH, "2", "0.1", "1"])
             
         # Extract
         w.yes_flag=0
