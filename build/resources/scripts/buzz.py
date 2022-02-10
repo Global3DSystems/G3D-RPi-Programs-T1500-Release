@@ -2,20 +2,31 @@ import sys
 import RPi.GPIO as GPIO
 import time
 
-# Usage: python3 buzz.py num_beeps interval_sec
+# Usage: python3 buzz.py num_beeps interval_sec 0
 
 num_beeps = int(sys.argv[1])
 interval_sec = float(sys.argv[2])
-buzz_bcm_pin = 23
+is_pwm = int(sys.argv[3])
+buzz_bcm_pin = 21
 
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(buzz_bcm_pin, GPIO.OUT)
 
-for i in range(num_beeps):
-    GPIO.output(buzz_bcm_pin, GPIO.HIGH)
-    time.sleep(interval_sec)
-    GPIO.output(buzz_bcm_pin, GPIO.LOW)
-    time.sleep(interval_sec)    
+breath = GPIO.PWM(buzz_bcm_pin, 1000)
+breath.start(0)
+
+if is_pwm == 0:
+    for i in range(num_beeps):
+        GPIO.output(buzz_bcm_pin, GPIO.HIGH)
+        time.sleep(interval_sec)
+        GPIO.output(buzz_bcm_pin, GPIO.LOW)
+        time.sleep(interval_sec)   
+else:
+    for i in range(num_beeps):
+        breath.ChangeDutyCycle(100)
+        time.sleep(interval_sec)
+        breath.ChangeDutyCycle(0)
+        time.sleep(interval_sec)   
 
 GPIO.cleanup()
 
