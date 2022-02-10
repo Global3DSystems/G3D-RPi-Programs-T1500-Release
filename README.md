@@ -14,10 +14,8 @@ section of this page then selecting "Download zip".
 * Do not rename the filename.It must be exactly "G3D-RPi-Programs-T15000-Release-master.zip". If you downloaded this multiple times,
 it may appear as "G3D-RPi-Programs-T15000-Release-master.zip(1)". File name must be exactly "G3D-RPi-Programs-T15000-Release-master.zip" only.
 * Insert the flash drive in the printer.
-* Restart the printer.
-* A prompt will be shown in the touch screen, select it will scan the version and you may choose to update via the latest version or downgrade it.
-* Wait for the update finish message to appear. Reboot is required to apply the updates.
-* The program will still read the update file if it is not deleted in the flash drive. Delete it to stop prompting the update.
+* The printer will automatically reboot when the update is complete.
+* Remove the flash drive so it won't update again before turning on the printer.
 
 #
 
