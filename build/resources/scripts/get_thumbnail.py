@@ -40,7 +40,12 @@ def main():
                     print("DEBUG: ", file_dir + thumb_dir, extract_dir + filename.replace('.g3d','.png'))
                 except:
                     print("error in extracting a given file")
-
+    try:
+        thumb_usb_dir = file_dir + 'thumbnail/'
+        shutil.rmtree(thumb_usb_dir)
+        print('Deleting thumbnail folder')
+    except FileNotFoundError:
+        print("File not found")
 
     
 
