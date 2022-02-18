@@ -18,6 +18,7 @@ it may appear as "G3D-RPi-Programs-T15000-Release-master.zip(1)". File name must
 * The printer will make 2 beep sounds when it detected the update file then it will start updating.
 * When the update is successful, the printer will also make 2 beep sounds then automatically shutdowns.
 * Remove the flash drive and turn on the printer again to use the updated software.
+* The printer will make one long beep every time the program starts which means you can connect to it now via hotspot or your local network.
 
 #
 
