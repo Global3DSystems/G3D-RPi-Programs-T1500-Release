@@ -394,10 +394,10 @@ if __name__ == "__main__":
         #w.showFullScreen()
 
         # Programatically click the buttons so the script on all printers remains the same structure.
-        
+
         # Beep script, 2 beeps 0.1 seconds delay.
         subprocess.run(["python3", BEEP_SCRIPT_PATH, "2", "0.1", "1"])
-            
+
         # Extract
         w.yes_flag=0
         w.yes_button.click()

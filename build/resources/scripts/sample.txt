@@ -1,6 +1,3 @@
 OPPO A3s
 NetworkTest24GHz
-NetworkTest5GHz
-PLDT_Home_Devz
-PLDTHOMEFIBR5Gx3fnt
 PLDTHOMEFIBRPMybC
