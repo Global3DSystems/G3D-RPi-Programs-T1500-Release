@@ -1,40 +1,45 @@
-<div class="row h-100">
-    <div class="col my-auto text-center">
-        <div class="container">
+<div class="container text-center">
 
-            <br>
-            <h1>Select USB Files</h1>
+    <div class="col">
 
-            <div class="row control-box">
-                <div class="col-md control-sub-box">
+        <h1 style="margin-top:40px;">Select File from USB</h1>
+        <br>
 
-                    <form action="/printinfo" method="POST" style="display: inline;">
+        <form action="/printinfo" method="POST">
 
-                        <div class="select-box mb-4">
-
-                            <select class="form-select form-select-lg mb-3" size=10 name="g3d-file-list"
-                                aria-label=".form-select-lg example" style="width: 100%;">
+            <div class="row-md control-sub-box">
 
 
-                                {loop row}
-                                <option>{row.name}</option>
-                                {end row}
+                <div class="row thumbnail-div-style">
+                    {loop row}
+                    <div class="col-md">
+                        <div class="row-md">
+                            <button type="button" class="btn btn-primary thumbnail-button-style thumbnail-button"
+                                data-toggle="button" aria-pressed="false" autocomplete="off"
+                                style="background-image:url('{row.image_path}'); background-size:cover;"
+                                onClick="select_thumbnail_button_clicked(this)" name="{row.name}">
 
-                            </select>
+                            </button>
 
                         </div>
 
+                        <div class="row-md">
+                            <p>{row.name}</p>
+                        </div>
+                    </div>
 
-                        <input type="submit" class="btn shadow-none" method="post" name="back-usb-file-button" value="BACK">
-                        <input type="submit" class="btn shadow-none" method="post" name="refresh-usb-file-button" value="REFRESH">
-                        <input type="submit" class="btn shadow-none" method="post" name="select-usb-file-button" value="SELECT">
-                         
-                    </form>
-
-                   
+                    {end row}
 
                 </div>
 
+                <input type="submit" id="selected-usb-file-button" name="selected-usb-file-button" value="" hidden>
+
+
             </div>
-        </div>
+
+
+        </form>
     </div>
+
+</div>
+ 

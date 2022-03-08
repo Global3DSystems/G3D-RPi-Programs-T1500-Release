@@ -17,11 +17,11 @@
 
     <!-- Script to prevent form resubmissions -->
     <script>
-        if ( window.history.replaceState ) {
-            window.history.replaceState( null, null, window.location.href );
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
         }
     </script>
-    
+
 </head>
 
 
@@ -31,13 +31,13 @@
     <nav class="navbar navbar-default navbar-xs" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-          <p class="navbar-brand nav-printer-name">Printer Name: {printer_name}</p>
-          <p class="navbar-brand nav-network-mode">Network Mode: {network_mode}</p>
-          <p class="navbar-brand nav-network-mode">LAN IP: {lan_ip}</p>
+            <p class="navbar-brand nav-printer-name">Printer Name: {printer_name}</p>
+            <p class="navbar-brand nav-network-mode">Network Mode: {network_mode}</p>
+            <p class="navbar-brand nav-network-mode">LAN IP: {lan_ip}</p>
         </div>
     </nav>
-    
-     <!-- Main Navigation Bar-->
+
+    <!-- Main Navigation Bar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
             <a class="navbar-brand" href="/print">
@@ -85,6 +85,9 @@
 
     <!-- Script file for control page -->
     <script src="js/control_page.js"></script>
+
+    <!-- Script file knowing which thumbnail button is clicked. -->
+    <script src="js/select_thumbnail_button.js"></script>
 
     <!-- Sample messagebox -->
     <script type="text/javascript">

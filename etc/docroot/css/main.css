@@ -241,6 +241,10 @@ input[type="text"] {
 
 }
 
+.printinfo-input {
+    width:50%;
+}
+
 
 .image-printinfo-item>img {
     width: 75px;
@@ -263,7 +267,9 @@ input[type="text"] {
 }
 
 
-
+.hr {
+    color: #2991d0;
+}
 
 .control-sub-box {
     text-align: center;
@@ -565,3 +571,19 @@ a, a:hover, a:focus, a:active {
 .expand-anchor {
     display: block;
 }
+
+.thumbnail-div-style {
+    height:500px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.thumbnail-button-style {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 200px;
+    height: 200px;
+}
+

@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_ControlPageController_t {
-    QByteArrayData data[14];
-    char stringdata0[228];
+    QByteArrayData data[15];
+    char stringdata0[238];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -36,23 +36,24 @@ QT_MOC_LITERAL(1, 22, 27), // "position_build_plate_signal"
 QT_MOC_LITERAL(2, 50, 0), // ""
 QT_MOC_LITERAL(3, 51, 28), // "fan_control_cmd_onoff_signal"
 QT_MOC_LITERAL(4, 80, 7), // "turn_on"
-QT_MOC_LITERAL(5, 88, 27), // "uv_control_cmd_onoff_signal"
-QT_MOC_LITERAL(6, 116, 13), // "home_z_signal"
-QT_MOC_LITERAL(7, 130, 29), // "tilt_control_cmd_onoff_signal"
-QT_MOC_LITERAL(8, 160, 7), // "turn_up"
-QT_MOC_LITERAL(9, 168, 4), // "step"
-QT_MOC_LITERAL(10, 173, 13), // "move_z_signal"
-QT_MOC_LITERAL(11, 187, 2), // "up"
-QT_MOC_LITERAL(12, 190, 23), // "move_z_with_step_signal"
-QT_MOC_LITERAL(13, 214, 13) // "stop_z_signal"
+QT_MOC_LITERAL(5, 88, 9), // "fan_speed"
+QT_MOC_LITERAL(6, 98, 27), // "uv_control_cmd_onoff_signal"
+QT_MOC_LITERAL(7, 126, 13), // "home_z_signal"
+QT_MOC_LITERAL(8, 140, 29), // "tilt_control_cmd_onoff_signal"
+QT_MOC_LITERAL(9, 170, 7), // "turn_up"
+QT_MOC_LITERAL(10, 178, 4), // "step"
+QT_MOC_LITERAL(11, 183, 13), // "move_z_signal"
+QT_MOC_LITERAL(12, 197, 2), // "up"
+QT_MOC_LITERAL(13, 200, 23), // "move_z_with_step_signal"
+QT_MOC_LITERAL(14, 224, 13) // "stop_z_signal"
 
     },
     "ControlPageController\0position_build_plate_signal\0"
     "\0fan_control_cmd_onoff_signal\0turn_on\0"
-    "uv_control_cmd_onoff_signal\0home_z_signal\0"
-    "tilt_control_cmd_onoff_signal\0turn_up\0"
-    "step\0move_z_signal\0up\0move_z_with_step_signal\0"
-    "stop_z_signal"
+    "fan_speed\0uv_control_cmd_onoff_signal\0"
+    "home_z_signal\0tilt_control_cmd_onoff_signal\0"
+    "turn_up\0step\0move_z_signal\0up\0"
+    "move_z_with_step_signal\0stop_z_signal"
 };
 #undef QT_MOC_LITERAL
 
@@ -71,24 +72,24 @@ static const uint qt_meta_data_ControlPageController[] = {
 
  // signals: name, argc, parameters, tag, flags
        1,    0,   59,    2, 0x06 /* Public */,
-       3,    1,   60,    2, 0x06 /* Public */,
-       5,    1,   63,    2, 0x06 /* Public */,
-       6,    0,   66,    2, 0x06 /* Public */,
-       7,    2,   67,    2, 0x06 /* Public */,
-       7,    1,   72,    2, 0x26 /* Public | MethodCloned */,
-      10,    1,   75,    2, 0x06 /* Public */,
-      12,    1,   78,    2, 0x06 /* Public */,
-      13,    0,   81,    2, 0x06 /* Public */,
+       3,    2,   60,    2, 0x06 /* Public */,
+       6,    2,   65,    2, 0x06 /* Public */,
+       7,    0,   70,    2, 0x06 /* Public */,
+       8,    2,   71,    2, 0x06 /* Public */,
+       8,    1,   76,    2, 0x26 /* Public | MethodCloned */,
+      11,    1,   79,    2, 0x06 /* Public */,
+      13,    1,   82,    2, 0x06 /* Public */,
+      14,    0,   85,    2, 0x06 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Bool,    4,
-    QMetaType::Void, QMetaType::Bool,    4,
+    QMetaType::Void, QMetaType::Bool, QMetaType::QString,    4,    5,
+    QMetaType::Void, QMetaType::Bool, QMetaType::QString,    4,    5,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Bool, QMetaType::Double,    8,    9,
-    QMetaType::Void, QMetaType::Bool,    8,
-    QMetaType::Void, QMetaType::Bool,   11,
-    QMetaType::Void, QMetaType::Double,    9,
+    QMetaType::Void, QMetaType::Bool, QMetaType::Double,    9,   10,
+    QMetaType::Void, QMetaType::Bool,    9,
+    QMetaType::Void, QMetaType::Bool,   12,
+    QMetaType::Void, QMetaType::Double,   10,
     QMetaType::Void,
 
        0        // eod
@@ -101,8 +102,8 @@ void ControlPageController::qt_static_metacall(QObject *_o, QMetaObject::Call _c
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->position_build_plate_signal(); break;
-        case 1: _t->fan_control_cmd_onoff_signal((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 2: _t->uv_control_cmd_onoff_signal((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 1: _t->fan_control_cmd_onoff_signal((*reinterpret_cast< bool(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 2: _t->uv_control_cmd_onoff_signal((*reinterpret_cast< bool(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
         case 3: _t->home_z_signal(); break;
         case 4: _t->tilt_control_cmd_onoff_signal((*reinterpret_cast< bool(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
         case 5: _t->tilt_control_cmd_onoff_signal((*reinterpret_cast< bool(*)>(_a[1]))); break;
@@ -121,14 +122,14 @@ void ControlPageController::qt_static_metacall(QObject *_o, QMetaObject::Call _c
             }
         }
         {
-            using _t = void (ControlPageController::*)(bool );
+            using _t = void (ControlPageController::*)(bool , QString );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&ControlPageController::fan_control_cmd_onoff_signal)) {
                 *result = 1;
                 return;
             }
         }
         {
-            using _t = void (ControlPageController::*)(bool );
+            using _t = void (ControlPageController::*)(bool , QString );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&ControlPageController::uv_control_cmd_onoff_signal)) {
                 *result = 2;
                 return;
@@ -215,16 +216,16 @@ void ControlPageController::position_build_plate_signal()
 }
 
 // SIGNAL 1
-void ControlPageController::fan_control_cmd_onoff_signal(bool _t1)
+void ControlPageController::fan_control_cmd_onoff_signal(bool _t1, QString _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
-void ControlPageController::uv_control_cmd_onoff_signal(bool _t1)
+void ControlPageController::uv_control_cmd_onoff_signal(bool _t1, QString _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 

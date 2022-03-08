@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[133];
-    char stringdata0[3010];
+    QByteArrayData data[134];
+    char stringdata0[3016];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -106,64 +106,65 @@ QT_MOC_LITERAL(71, 1875, 23), // "project_black_mini_slot"
 QT_MOC_LITERAL(72, 1899, 25), // "position_build_plate_slot"
 QT_MOC_LITERAL(73, 1925, 26), // "fan_control_cmd_onoff_slot"
 QT_MOC_LITERAL(74, 1952, 7), // "turn_on"
-QT_MOC_LITERAL(75, 1960, 25), // "uv_control_cmd_onoff_slot"
-QT_MOC_LITERAL(76, 1986, 11), // "home_z_slot"
-QT_MOC_LITERAL(77, 1998, 27), // "tilt_control_cmd_onoff_slot"
-QT_MOC_LITERAL(78, 2026, 7), // "turn_up"
-QT_MOC_LITERAL(79, 2034, 4), // "step"
-QT_MOC_LITERAL(80, 2039, 11), // "move_z_slot"
-QT_MOC_LITERAL(81, 2051, 2), // "up"
-QT_MOC_LITERAL(82, 2054, 21), // "move_z_with_step_slot"
-QT_MOC_LITERAL(83, 2076, 11), // "stop_z_slot"
-QT_MOC_LITERAL(84, 2088, 21), // "on_button1_on_clicked"
-QT_MOC_LITERAL(85, 2110, 22), // "on_button2_off_clicked"
-QT_MOC_LITERAL(86, 2133, 21), // "on_button2_on_clicked"
-QT_MOC_LITERAL(87, 2155, 27), // "on_pattern01_button_clicked"
-QT_MOC_LITERAL(88, 2183, 27), // "on_pattern02_button_clicked"
-QT_MOC_LITERAL(89, 2211, 27), // "on_pattern03_button_clicked"
-QT_MOC_LITERAL(90, 2239, 21), // "on_button1_on_pressed"
-QT_MOC_LITERAL(91, 2261, 22), // "on_button1_on_released"
-QT_MOC_LITERAL(92, 2284, 24), // "on_choose_up_btn_clicked"
-QT_MOC_LITERAL(93, 2309, 26), // "on_choose_down_btn_clicked"
-QT_MOC_LITERAL(94, 2336, 25), // "on_choose_thumb_1_clicked"
-QT_MOC_LITERAL(95, 2362, 25), // "on_choose_thumb_2_clicked"
-QT_MOC_LITERAL(96, 2388, 25), // "on_choose_thumb_3_clicked"
-QT_MOC_LITERAL(97, 2414, 25), // "on_choose_thumb_4_clicked"
-QT_MOC_LITERAL(98, 2440, 25), // "on_choose_thumb_5_clicked"
-QT_MOC_LITERAL(99, 2466, 25), // "on_choose_thumb_6_clicked"
-QT_MOC_LITERAL(100, 2492, 32), // "on_print_finished_ok_btn_clicked"
-QT_MOC_LITERAL(101, 2525, 30), // "on_about_update_button_clicked"
-QT_MOC_LITERAL(102, 2556, 23), // "on_reset_button_clicked"
-QT_MOC_LITERAL(103, 2580, 20), // "on_about_yes_clicked"
-QT_MOC_LITERAL(104, 2601, 19), // "on_about_no_clicked"
-QT_MOC_LITERAL(105, 2621, 10), // "WindowMenu"
-QT_MOC_LITERAL(106, 2632, 4), // "none"
-QT_MOC_LITERAL(107, 2637, 9), // "main_menu"
-QT_MOC_LITERAL(108, 2647, 12), // "control_menu"
-QT_MOC_LITERAL(109, 2660, 13), // "settings_menu"
-QT_MOC_LITERAL(110, 2674, 9), // "quit_menu"
-QT_MOC_LITERAL(111, 2684, 13), // "get_file_menu"
-QT_MOC_LITERAL(112, 2698, 15), // "print_prep_menu"
-QT_MOC_LITERAL(113, 2714, 13), // "printing_menu"
-QT_MOC_LITERAL(114, 2728, 16), // "modify_cure_menu"
-QT_MOC_LITERAL(115, 2745, 17), // "control_func_menu"
-QT_MOC_LITERAL(116, 2763, 13), // "about_us_menu"
-QT_MOC_LITERAL(117, 2777, 12), // "network_menu"
-QT_MOC_LITERAL(118, 2790, 17), // "edit_network_menu"
-QT_MOC_LITERAL(119, 2808, 20), // "theme_selection_menu"
-QT_MOC_LITERAL(120, 2829, 17), // "info_message_menu"
-QT_MOC_LITERAL(121, 2847, 11), // "move_z_menu"
-QT_MOC_LITERAL(122, 2859, 16), // "led_control_menu"
-QT_MOC_LITERAL(123, 2876, 11), // "home_z_menu"
-QT_MOC_LITERAL(124, 2888, 14), // "move_tilt_menu"
-QT_MOC_LITERAL(125, 2903, 13), // "lcd_test_menu"
-QT_MOC_LITERAL(126, 2917, 16), // "fan_control_menu"
-QT_MOC_LITERAL(127, 2934, 11), // "manual_menu"
-QT_MOC_LITERAL(128, 2946, 16), // "get_file_v2_menu"
-QT_MOC_LITERAL(129, 2963, 19), // "print_finished_menu"
-QT_MOC_LITERAL(130, 2983, 6), // "Active"
-QT_MOC_LITERAL(131, 2990, 10), // "deactivate"
-QT_MOC_LITERAL(132, 3001, 8) // "activate"
+QT_MOC_LITERAL(75, 1960, 5), // "speed"
+QT_MOC_LITERAL(76, 1966, 25), // "uv_control_cmd_onoff_slot"
+QT_MOC_LITERAL(77, 1992, 11), // "home_z_slot"
+QT_MOC_LITERAL(78, 2004, 27), // "tilt_control_cmd_onoff_slot"
+QT_MOC_LITERAL(79, 2032, 7), // "turn_up"
+QT_MOC_LITERAL(80, 2040, 4), // "step"
+QT_MOC_LITERAL(81, 2045, 11), // "move_z_slot"
+QT_MOC_LITERAL(82, 2057, 2), // "up"
+QT_MOC_LITERAL(83, 2060, 21), // "move_z_with_step_slot"
+QT_MOC_LITERAL(84, 2082, 11), // "stop_z_slot"
+QT_MOC_LITERAL(85, 2094, 21), // "on_button1_on_clicked"
+QT_MOC_LITERAL(86, 2116, 22), // "on_button2_off_clicked"
+QT_MOC_LITERAL(87, 2139, 21), // "on_button2_on_clicked"
+QT_MOC_LITERAL(88, 2161, 27), // "on_pattern01_button_clicked"
+QT_MOC_LITERAL(89, 2189, 27), // "on_pattern02_button_clicked"
+QT_MOC_LITERAL(90, 2217, 27), // "on_pattern03_button_clicked"
+QT_MOC_LITERAL(91, 2245, 21), // "on_button1_on_pressed"
+QT_MOC_LITERAL(92, 2267, 22), // "on_button1_on_released"
+QT_MOC_LITERAL(93, 2290, 24), // "on_choose_up_btn_clicked"
+QT_MOC_LITERAL(94, 2315, 26), // "on_choose_down_btn_clicked"
+QT_MOC_LITERAL(95, 2342, 25), // "on_choose_thumb_1_clicked"
+QT_MOC_LITERAL(96, 2368, 25), // "on_choose_thumb_2_clicked"
+QT_MOC_LITERAL(97, 2394, 25), // "on_choose_thumb_3_clicked"
+QT_MOC_LITERAL(98, 2420, 25), // "on_choose_thumb_4_clicked"
+QT_MOC_LITERAL(99, 2446, 25), // "on_choose_thumb_5_clicked"
+QT_MOC_LITERAL(100, 2472, 25), // "on_choose_thumb_6_clicked"
+QT_MOC_LITERAL(101, 2498, 32), // "on_print_finished_ok_btn_clicked"
+QT_MOC_LITERAL(102, 2531, 30), // "on_about_update_button_clicked"
+QT_MOC_LITERAL(103, 2562, 23), // "on_reset_button_clicked"
+QT_MOC_LITERAL(104, 2586, 20), // "on_about_yes_clicked"
+QT_MOC_LITERAL(105, 2607, 19), // "on_about_no_clicked"
+QT_MOC_LITERAL(106, 2627, 10), // "WindowMenu"
+QT_MOC_LITERAL(107, 2638, 4), // "none"
+QT_MOC_LITERAL(108, 2643, 9), // "main_menu"
+QT_MOC_LITERAL(109, 2653, 12), // "control_menu"
+QT_MOC_LITERAL(110, 2666, 13), // "settings_menu"
+QT_MOC_LITERAL(111, 2680, 9), // "quit_menu"
+QT_MOC_LITERAL(112, 2690, 13), // "get_file_menu"
+QT_MOC_LITERAL(113, 2704, 15), // "print_prep_menu"
+QT_MOC_LITERAL(114, 2720, 13), // "printing_menu"
+QT_MOC_LITERAL(115, 2734, 16), // "modify_cure_menu"
+QT_MOC_LITERAL(116, 2751, 17), // "control_func_menu"
+QT_MOC_LITERAL(117, 2769, 13), // "about_us_menu"
+QT_MOC_LITERAL(118, 2783, 12), // "network_menu"
+QT_MOC_LITERAL(119, 2796, 17), // "edit_network_menu"
+QT_MOC_LITERAL(120, 2814, 20), // "theme_selection_menu"
+QT_MOC_LITERAL(121, 2835, 17), // "info_message_menu"
+QT_MOC_LITERAL(122, 2853, 11), // "move_z_menu"
+QT_MOC_LITERAL(123, 2865, 16), // "led_control_menu"
+QT_MOC_LITERAL(124, 2882, 11), // "home_z_menu"
+QT_MOC_LITERAL(125, 2894, 14), // "move_tilt_menu"
+QT_MOC_LITERAL(126, 2909, 13), // "lcd_test_menu"
+QT_MOC_LITERAL(127, 2923, 16), // "fan_control_menu"
+QT_MOC_LITERAL(128, 2940, 11), // "manual_menu"
+QT_MOC_LITERAL(129, 2952, 16), // "get_file_v2_menu"
+QT_MOC_LITERAL(130, 2969, 19), // "print_finished_menu"
+QT_MOC_LITERAL(131, 2989, 6), // "Active"
+QT_MOC_LITERAL(132, 2996, 10), // "deactivate"
+QT_MOC_LITERAL(133, 3007, 8) // "activate"
 
     },
     "MainWindow\0on_print_button_clicked\0\0"
@@ -226,12 +227,12 @@ QT_MOC_LITERAL(132, 3001, 8) // "activate"
     "project_black_mini_slot\0"
     "position_build_plate_slot\0"
     "fan_control_cmd_onoff_slot\0turn_on\0"
-    "uv_control_cmd_onoff_slot\0home_z_slot\0"
-    "tilt_control_cmd_onoff_slot\0turn_up\0"
-    "step\0move_z_slot\0up\0move_z_with_step_slot\0"
-    "stop_z_slot\0on_button1_on_clicked\0"
-    "on_button2_off_clicked\0on_button2_on_clicked\0"
-    "on_pattern01_button_clicked\0"
+    "speed\0uv_control_cmd_onoff_slot\0"
+    "home_z_slot\0tilt_control_cmd_onoff_slot\0"
+    "turn_up\0step\0move_z_slot\0up\0"
+    "move_z_with_step_slot\0stop_z_slot\0"
+    "on_button1_on_clicked\0on_button2_off_clicked\0"
+    "on_button2_on_clicked\0on_pattern01_button_clicked\0"
     "on_pattern02_button_clicked\0"
     "on_pattern03_button_clicked\0"
     "on_button1_on_pressed\0on_button1_on_released\0"
@@ -269,7 +270,7 @@ static const uint qt_meta_data_MainWindow[] = {
        0,    0, // classinfo
       97,   14, // methods
        0,    0, // properties
-       2,  620, // enums/sets
+       2,  624, // enums/sets
        0,    0, // constructors
        0,       // flags
        0,       // signalCount
@@ -343,35 +344,35 @@ static const uint qt_meta_data_MainWindow[] = {
       69,    1,  572,    2, 0x0a /* Public */,
       71,    0,  575,    2, 0x0a /* Public */,
       72,    0,  576,    2, 0x0a /* Public */,
-      73,    1,  577,    2, 0x0a /* Public */,
-      75,    1,  580,    2, 0x0a /* Public */,
-      76,    0,  583,    2, 0x0a /* Public */,
-      77,    2,  584,    2, 0x0a /* Public */,
-      77,    1,  589,    2, 0x2a /* Public | MethodCloned */,
-      80,    1,  592,    2, 0x0a /* Public */,
-      82,    1,  595,    2, 0x0a /* Public */,
-      83,    0,  598,    2, 0x0a /* Public */,
-      84,    0,  599,    2, 0x08 /* Private */,
-      85,    0,  600,    2, 0x08 /* Private */,
-      86,    0,  601,    2, 0x08 /* Private */,
-      87,    0,  602,    2, 0x08 /* Private */,
-      88,    0,  603,    2, 0x08 /* Private */,
-      89,    0,  604,    2, 0x08 /* Private */,
-      90,    0,  605,    2, 0x08 /* Private */,
-      91,    0,  606,    2, 0x08 /* Private */,
-      92,    0,  607,    2, 0x08 /* Private */,
-      93,    0,  608,    2, 0x08 /* Private */,
-      94,    0,  609,    2, 0x08 /* Private */,
-      95,    0,  610,    2, 0x08 /* Private */,
-      96,    0,  611,    2, 0x08 /* Private */,
-      97,    0,  612,    2, 0x08 /* Private */,
-      98,    0,  613,    2, 0x08 /* Private */,
-      99,    0,  614,    2, 0x08 /* Private */,
-     100,    0,  615,    2, 0x08 /* Private */,
-     101,    0,  616,    2, 0x08 /* Private */,
-     102,    0,  617,    2, 0x08 /* Private */,
-     103,    0,  618,    2, 0x08 /* Private */,
-     104,    0,  619,    2, 0x08 /* Private */,
+      73,    2,  577,    2, 0x0a /* Public */,
+      76,    2,  582,    2, 0x0a /* Public */,
+      77,    0,  587,    2, 0x0a /* Public */,
+      78,    2,  588,    2, 0x0a /* Public */,
+      78,    1,  593,    2, 0x2a /* Public | MethodCloned */,
+      81,    1,  596,    2, 0x0a /* Public */,
+      83,    1,  599,    2, 0x0a /* Public */,
+      84,    0,  602,    2, 0x0a /* Public */,
+      85,    0,  603,    2, 0x08 /* Private */,
+      86,    0,  604,    2, 0x08 /* Private */,
+      87,    0,  605,    2, 0x08 /* Private */,
+      88,    0,  606,    2, 0x08 /* Private */,
+      89,    0,  607,    2, 0x08 /* Private */,
+      90,    0,  608,    2, 0x08 /* Private */,
+      91,    0,  609,    2, 0x08 /* Private */,
+      92,    0,  610,    2, 0x08 /* Private */,
+      93,    0,  611,    2, 0x08 /* Private */,
+      94,    0,  612,    2, 0x08 /* Private */,
+      95,    0,  613,    2, 0x08 /* Private */,
+      96,    0,  614,    2, 0x08 /* Private */,
+      97,    0,  615,    2, 0x08 /* Private */,
+      98,    0,  616,    2, 0x08 /* Private */,
+      99,    0,  617,    2, 0x08 /* Private */,
+     100,    0,  618,    2, 0x08 /* Private */,
+     101,    0,  619,    2, 0x08 /* Private */,
+     102,    0,  620,    2, 0x08 /* Private */,
+     103,    0,  621,    2, 0x08 /* Private */,
+     104,    0,  622,    2, 0x08 /* Private */,
+     105,    0,  623,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
@@ -442,13 +443,13 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void, QMetaType::QString,   70,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Bool,   74,
-    QMetaType::Void, QMetaType::Bool,   74,
+    QMetaType::Void, QMetaType::Bool, QMetaType::QString,   74,   75,
+    QMetaType::Void, QMetaType::Bool, QMetaType::QString,   74,   75,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::Bool, QMetaType::Double,   78,   79,
-    QMetaType::Void, QMetaType::Bool,   78,
-    QMetaType::Void, QMetaType::Bool,   81,
-    QMetaType::Void, QMetaType::Double,   79,
+    QMetaType::Void, QMetaType::Bool, QMetaType::Double,   79,   80,
+    QMetaType::Void, QMetaType::Bool,   79,
+    QMetaType::Void, QMetaType::Bool,   82,
+    QMetaType::Void, QMetaType::Double,   80,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -473,36 +474,36 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
 
  // enums: name, flags, count, data
-     105, 0x0,   24,  628,
-     130, 0x0,    2,  676,
+     106, 0x0,   24,  632,
+     131, 0x0,    2,  680,
 
  // enum data: key, value
-     106, uint(MainWindow::none),
-     107, uint(MainWindow::main_menu),
-     108, uint(MainWindow::control_menu),
-     109, uint(MainWindow::settings_menu),
-     110, uint(MainWindow::quit_menu),
-     111, uint(MainWindow::get_file_menu),
-     112, uint(MainWindow::print_prep_menu),
-     113, uint(MainWindow::printing_menu),
-     114, uint(MainWindow::modify_cure_menu),
-     115, uint(MainWindow::control_func_menu),
-     116, uint(MainWindow::about_us_menu),
-     117, uint(MainWindow::network_menu),
-     118, uint(MainWindow::edit_network_menu),
-     119, uint(MainWindow::theme_selection_menu),
-     120, uint(MainWindow::info_message_menu),
-     121, uint(MainWindow::move_z_menu),
-     122, uint(MainWindow::led_control_menu),
-     123, uint(MainWindow::home_z_menu),
-     124, uint(MainWindow::move_tilt_menu),
-     125, uint(MainWindow::lcd_test_menu),
-     126, uint(MainWindow::fan_control_menu),
-     127, uint(MainWindow::manual_menu),
-     128, uint(MainWindow::get_file_v2_menu),
-     129, uint(MainWindow::print_finished_menu),
-     131, uint(MainWindow::deactivate),
-     132, uint(MainWindow::activate),
+     107, uint(MainWindow::none),
+     108, uint(MainWindow::main_menu),
+     109, uint(MainWindow::control_menu),
+     110, uint(MainWindow::settings_menu),
+     111, uint(MainWindow::quit_menu),
+     112, uint(MainWindow::get_file_menu),
+     113, uint(MainWindow::print_prep_menu),
+     114, uint(MainWindow::printing_menu),
+     115, uint(MainWindow::modify_cure_menu),
+     116, uint(MainWindow::control_func_menu),
+     117, uint(MainWindow::about_us_menu),
+     118, uint(MainWindow::network_menu),
+     119, uint(MainWindow::edit_network_menu),
+     120, uint(MainWindow::theme_selection_menu),
+     121, uint(MainWindow::info_message_menu),
+     122, uint(MainWindow::move_z_menu),
+     123, uint(MainWindow::led_control_menu),
+     124, uint(MainWindow::home_z_menu),
+     125, uint(MainWindow::move_tilt_menu),
+     126, uint(MainWindow::lcd_test_menu),
+     127, uint(MainWindow::fan_control_menu),
+     128, uint(MainWindow::manual_menu),
+     129, uint(MainWindow::get_file_v2_menu),
+     130, uint(MainWindow::print_finished_menu),
+     132, uint(MainWindow::deactivate),
+     133, uint(MainWindow::activate),
 
        0        // eod
 };
@@ -581,8 +582,8 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 65: _t->project_image_mini_slot((*reinterpret_cast< QString(*)>(_a[1]))); break;
         case 66: _t->project_black_mini_slot(); break;
         case 67: _t->position_build_plate_slot(); break;
-        case 68: _t->fan_control_cmd_onoff_slot((*reinterpret_cast< bool(*)>(_a[1]))); break;
-        case 69: _t->uv_control_cmd_onoff_slot((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 68: _t->fan_control_cmd_onoff_slot((*reinterpret_cast< bool(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
+        case 69: _t->uv_control_cmd_onoff_slot((*reinterpret_cast< bool(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
         case 70: _t->home_z_slot(); break;
         case 71: _t->tilt_control_cmd_onoff_slot((*reinterpret_cast< bool(*)>(_a[1])),(*reinterpret_cast< double(*)>(_a[2]))); break;
         case 72: _t->tilt_control_cmd_onoff_slot((*reinterpret_cast< bool(*)>(_a[1]))); break;
@@ -651,8 +652,8 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     return _id;
 }
 struct qt_meta_stringdata_PrintThread_t {
-    QByteArrayData data[13];
-    char stringdata0[243];
+    QByteArrayData data[14];
+    char stringdata0[253];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -668,19 +669,20 @@ QT_MOC_LITERAL(3, 34, 23), // "before_layer_cmd_signal"
 QT_MOC_LITERAL(4, 58, 9), // "layer_pos"
 QT_MOC_LITERAL(5, 68, 27), // "uv_control_cmd_onoff_signal"
 QT_MOC_LITERAL(6, 96, 7), // "turn_on"
-QT_MOC_LITERAL(7, 104, 22), // "after_layer_cmd_signal"
-QT_MOC_LITERAL(8, 127, 21), // "post_print_cmd_signal"
-QT_MOC_LITERAL(9, 149, 24), // "update_print_info_signal"
-QT_MOC_LITERAL(10, 174, 25), // "project_image_mini_signal"
-QT_MOC_LITERAL(11, 200, 16), // "image_stylesheet"
-QT_MOC_LITERAL(12, 217, 25) // "project_black_mini_signal"
+QT_MOC_LITERAL(7, 104, 9), // "fan_speed"
+QT_MOC_LITERAL(8, 114, 22), // "after_layer_cmd_signal"
+QT_MOC_LITERAL(9, 137, 21), // "post_print_cmd_signal"
+QT_MOC_LITERAL(10, 159, 24), // "update_print_info_signal"
+QT_MOC_LITERAL(11, 184, 25), // "project_image_mini_signal"
+QT_MOC_LITERAL(12, 210, 16), // "image_stylesheet"
+QT_MOC_LITERAL(13, 227, 25) // "project_black_mini_signal"
 
     },
     "PrintThread\0pre_print_cmd_signal\0\0"
     "before_layer_cmd_signal\0layer_pos\0"
     "uv_control_cmd_onoff_signal\0turn_on\0"
-    "after_layer_cmd_signal\0post_print_cmd_signal\0"
-    "update_print_info_signal\0"
+    "fan_speed\0after_layer_cmd_signal\0"
+    "post_print_cmd_signal\0update_print_info_signal\0"
     "project_image_mini_signal\0image_stylesheet\0"
     "project_black_mini_signal"
 };
@@ -702,21 +704,21 @@ static const uint qt_meta_data_PrintThread[] = {
  // signals: name, argc, parameters, tag, flags
        1,    0,   54,    2, 0x06 /* Public */,
        3,    1,   55,    2, 0x06 /* Public */,
-       5,    1,   58,    2, 0x06 /* Public */,
-       7,    0,   61,    2, 0x06 /* Public */,
-       8,    1,   62,    2, 0x06 /* Public */,
-       9,    0,   65,    2, 0x06 /* Public */,
-      10,    1,   66,    2, 0x06 /* Public */,
-      12,    0,   69,    2, 0x06 /* Public */,
+       5,    2,   58,    2, 0x06 /* Public */,
+       8,    0,   63,    2, 0x06 /* Public */,
+       9,    1,   64,    2, 0x06 /* Public */,
+      10,    0,   67,    2, 0x06 /* Public */,
+      11,    1,   68,    2, 0x06 /* Public */,
+      13,    0,   71,    2, 0x06 /* Public */,
 
  // signals: parameters
     QMetaType::Void,
     QMetaType::Void, QMetaType::Double,    4,
-    QMetaType::Void, QMetaType::Bool,    6,
+    QMetaType::Void, QMetaType::Bool, QMetaType::QString,    6,    7,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Double,    4,
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString,   11,
+    QMetaType::Void, QMetaType::QString,   12,
     QMetaType::Void,
 
        0        // eod
@@ -730,7 +732,7 @@ void PrintThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         switch (_id) {
         case 0: _t->pre_print_cmd_signal(); break;
         case 1: _t->before_layer_cmd_signal((*reinterpret_cast< double(*)>(_a[1]))); break;
-        case 2: _t->uv_control_cmd_onoff_signal((*reinterpret_cast< bool(*)>(_a[1]))); break;
+        case 2: _t->uv_control_cmd_onoff_signal((*reinterpret_cast< bool(*)>(_a[1])),(*reinterpret_cast< QString(*)>(_a[2]))); break;
         case 3: _t->after_layer_cmd_signal(); break;
         case 4: _t->post_print_cmd_signal((*reinterpret_cast< double(*)>(_a[1]))); break;
         case 5: _t->update_print_info_signal(); break;
@@ -755,7 +757,7 @@ void PrintThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
             }
         }
         {
-            using _t = void (PrintThread::*)(bool );
+            using _t = void (PrintThread::*)(bool , QString );
             if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&PrintThread::uv_control_cmd_onoff_signal)) {
                 *result = 2;
                 return;
@@ -849,9 +851,9 @@ void PrintThread::before_layer_cmd_signal(double _t1)
 }
 
 // SIGNAL 2
-void PrintThread::uv_control_cmd_onoff_signal(bool _t1)
+void PrintThread::uv_control_cmd_onoff_signal(bool _t1, QString _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 

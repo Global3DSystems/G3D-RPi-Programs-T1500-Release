@@ -15,18 +15,20 @@ GPIO.setup(buzz_bcm_pin, GPIO.OUT)
 breath = GPIO.PWM(buzz_bcm_pin, 1000)
 breath.start(0)
 
+# Normal active buzzer. High and low only.
 if is_pwm == 0:
     for i in range(num_beeps):
         GPIO.output(buzz_bcm_pin, GPIO.HIGH)
         time.sleep(interval_sec)
         GPIO.output(buzz_bcm_pin, GPIO.LOW)
-        time.sleep(interval_sec)   
+        time.sleep(interval_sec)
+# Passive buzzer, pwm adjustment.
 else:
     for i in range(num_beeps):
-        breath.ChangeDutyCycle(100)
+        breath.ChangeDutyCycle(0.1)
         time.sleep(interval_sec)
         breath.ChangeDutyCycle(0)
-        time.sleep(interval_sec)   
+        time.sleep(interval_sec)
 
 GPIO.cleanup()
 
