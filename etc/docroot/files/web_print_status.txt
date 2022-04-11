@@ -1,5 +1,5 @@
-name=Shape-Sphere.g3d
-current-layer=1 / 247
-remaining-time=1 hr 18 min
-progress=0
+name=MODEL.g3d
+current-layer=7 / 638
+remaining-time=3 hr 14 min
+progress=1
 current_image_path=/files/mini_projection.png

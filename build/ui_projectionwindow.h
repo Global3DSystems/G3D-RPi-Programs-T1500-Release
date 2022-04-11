@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'projectionwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.11.3
+** Created by: Qt User Interface Compiler version 5.15.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -26,7 +26,7 @@ public:
     void setupUi(QMainWindow *ProjectionWindow)
     {
         if (ProjectionWindow->objectName().isEmpty())
-            ProjectionWindow->setObjectName(QStringLiteral("ProjectionWindow"));
+            ProjectionWindow->setObjectName(QString::fromUtf8("ProjectionWindow"));
         ProjectionWindow->resize(1000, 600);
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
@@ -34,11 +34,11 @@ public:
         sizePolicy.setHeightForWidth(ProjectionWindow->sizePolicy().hasHeightForWidth());
         ProjectionWindow->setSizePolicy(sizePolicy);
         centralwidget = new QWidget(ProjectionWindow);
-        centralwidget->setObjectName(QStringLiteral("centralwidget"));
+        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         image_label = new QLabel(centralwidget);
-        image_label->setObjectName(QStringLiteral("image_label"));
+        image_label->setObjectName(QString::fromUtf8("image_label"));
         image_label->setGeometry(QRect(0, 0, 1000, 600));
-        image_label->setStyleSheet(QStringLiteral("background-color: rgb(0, 0, 0);"));
+        image_label->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);"));
         image_label->setFrameShape(QFrame::Box);
         ProjectionWindow->setCentralWidget(centralwidget);
 
@@ -49,7 +49,7 @@ public:
 
     void retranslateUi(QMainWindow *ProjectionWindow)
     {
-        ProjectionWindow->setWindowTitle(QApplication::translate("ProjectionWindow", "MainWindow", nullptr));
+        ProjectionWindow->setWindowTitle(QCoreApplication::translate("ProjectionWindow", "MainWindow", nullptr));
         image_label->setText(QString());
     } // retranslateUi
 

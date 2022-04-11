@@ -46,7 +46,7 @@ TARGET_FOLDER_NAME = "G3D-RPi-Programs-T1500-Release-master"
 USERNAME = "pi" #getpass.getuser()
 HOME_DIR = os.path.join("/home", USERNAME) #os.spath.expanduser("~")
 DOWNLOADS_DIR = os.path.join(HOME_DIR, "Downloads") 
-USB_MOUNT_DIR = os.path.join("/media", USERNAME)
+USB_MOUNT_DIR = os.path.join("/media", "root")
 UPDATE_ZIP_DIR = os.path.join(DOWNLOADS_DIR, TARGET_FILE_NAME)
 UPDATE_FOLDER_DIR = os.path.join(DOWNLOADS_DIR, TARGET_FOLDER_NAME)
 CURRENT_PROGRAM_DIR = os.path.join(HOME_DIR, TARGET_FOLDER_NAME)
@@ -390,63 +390,43 @@ if __name__ == "__main__":
     if w.is_usb_update_present():
         print("[DEBUG] Update file found.")
 
-        # Automatic update unlike in T2000 where you have a GUI.
-        #w.showFullScreen()
-
-        # Programatically click the buttons so the script on all printers remains the same structure.
-
         # Beep script, 2 beeps 0.1 seconds delay.
         subprocess.run(["python3", BEEP_SCRIPT_PATH, "2", "0.1", "1"])
 
-        # Extract
-        w.yes_flag=0
-        w.yes_button.click()
-        time.sleep(3)
+        w.showFullScreen()
 
-        # Update
-        w.yes_flag=1
-        w.yes_button.click()
-        time.sleep(3)
-
-        # Reboot
-        w.yes_flag=2
-        w.yes_button.click()
+        # Programatically click the buttons so the script on all printers remains the same structure.
 
         
     # If cloud downloaded update is present, we replace
     # the old one in home.
-    # Delete: /home/pi/G3D-RPi-Programs-Release-T1500-master
-    # Copy:   /home/pi/Downloads/G3D-RPi-Programs-Release-T1500-master
+    # Delete: /home/pi/G3D-RPi-Programs-T1500-Release-master
+    # Copy:   /home/pi/Downloads/G3D-RPi-Programs-T1500-Release-master
     # to /home/pi
 
     # TODO, make the path defined at the top.
     # Minor technical debt only.
 
-    # ==================================================================================
+    elif os.path.exists("/home/pi/Downloads/G3D-RPi-Programs-T1500-Release-master"):
+
+        w.cloud_update_apply()
+        w.showFullScreen()
+
+        app.processEvents()
+
+        time.sleep(5)
+
+        app.processEvents()
     
-    # Cloud update disabled in T1500.
-    # elif os.path.exists("/home/pi/Downloads/G3D-RPi-Programs-Release-T1500-master"):
+        shutil.rmtree("/home/pi/G3D-RPi-Programs-T1500-Release-master", ignore_errors = True)
 
-    #     w.cloud_update_apply()
-    #     w.showFullScreen()
+        shutil.copytree("/home/pi/Downloads/G3D-RPi-Programs-T1500-Release-master",
+                        "/home/pi/G3D-RPi-Programs-T1500-Release-master")
 
-    #     app.processEvents()
+        shutil.rmtree("/home/pi/Downloads/G3D-RPi-Programs-T1500-Release-master")
 
-    #     time.sleep(5)
-
-    #     app.processEvents()
-    
-    #     shutil.rmtree("/home/pi/G3D-RPi-Programs-Release-T1500-master", ignore_errors = True)
-
-    #     shutil.copytree("/home/pi/Downloads/G3D-RPi-Programs-Release-T1500-master",
-    #                     "/home/pi/G3D-RPi-Programs-Release-T1500-master")
-
-    #     shutil.rmtree("/home/pi/Downloads/G3D-RPi-Programs-Release-T1500-master")
-
-    #     w.start_program()
-
-    # ==================================================================================
-        
+        w.start_program()
+  
     else:
         # Else, just start the program
         print("[DEBUG] No update file found.")

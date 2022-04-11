@@ -169,7 +169,7 @@ border-radius: 10px;</string>
      <property name="geometry">
       <rect>
        <x>90</x>
-       <y>10</y>
+       <y>60</y>
        <width>301</width>
        <height>87</height>
       </rect>
@@ -207,53 +207,11 @@ border-radius: 10px;</string>
       </size>
      </property>
     </widget>
-    <widget class="QPushButton" name="lcd_test_btn">
-     <property name="geometry">
-      <rect>
-       <x>410</x>
-       <y>120</y>
-       <width>301</width>
-       <height>87</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Proxima Nova</family>
-       <pointsize>14</pointsize>
-       <weight>50</weight>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="focusPolicy">
-      <enum>Qt::NoFocus</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-	border-radius: 10px;
-	background-color: rgb(41, 145, 208);
-	color: rgb(238, 238, 236);
-}
-</string>
-     </property>
-     <property name="text">
-      <string> LCD TEST                    </string>
-     </property>
-     <property name="icon">
-      <iconset resource="Resources.qrc">
-       <normaloff>:/build/resources/images/White Icon/square_squareWhite.png</normaloff>:/build/resources/images/White Icon/square_squareWhite.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>50</width>
-       <height>50</height>
-      </size>
-     </property>
-    </widget>
     <widget class="QPushButton" name="led_control_btn">
      <property name="geometry">
       <rect>
        <x>90</x>
-       <y>120</y>
+       <y>170</y>
        <width>301</width>
        <height>87</height>
       </rect>
@@ -291,95 +249,11 @@ border-radius: 10px;</string>
       </size>
      </property>
     </widget>
-    <widget class="QPushButton" name="home_z_btn">
-     <property name="geometry">
-      <rect>
-       <x>90</x>
-       <y>230</y>
-       <width>301</width>
-       <height>87</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Proxima Nova</family>
-       <pointsize>14</pointsize>
-       <weight>50</weight>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="focusPolicy">
-      <enum>Qt::NoFocus</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-	border-radius: 10px;
-	background-color: rgb(41, 145, 208);
-	color: rgb(238, 238, 236);
-}
-</string>
-     </property>
-     <property name="text">
-      <string> HOME Z AXIS           </string>
-     </property>
-     <property name="icon">
-      <iconset resource="Resources.qrc">
-       <normaloff>:/build/resources/images/White Icon/downWhite.png</normaloff>:/build/resources/images/White Icon/downWhite.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>50</width>
-       <height>50</height>
-      </size>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="move_tilt_btn">
-     <property name="geometry">
-      <rect>
-       <x>410</x>
-       <y>10</y>
-       <width>301</width>
-       <height>87</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Proxima Nova</family>
-       <pointsize>14</pointsize>
-       <weight>50</weight>
-       <bold>false</bold>
-      </font>
-     </property>
-     <property name="focusPolicy">
-      <enum>Qt::NoFocus</enum>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">QPushButton{
-	border-radius: 10px;
-	background-color: rgb(41, 145, 208);
-	color: rgb(238, 238, 236);
-}
-</string>
-     </property>
-     <property name="text">
-      <string> MOVE TILT                  </string>
-     </property>
-     <property name="icon">
-      <iconset resource="Resources.qrc">
-       <normaloff>:/build/resources/images/White Icon/untilltWhite.png</normaloff>:/build/resources/images/White Icon/untilltWhite.png</iconset>
-     </property>
-     <property name="iconSize">
-      <size>
-       <width>50</width>
-       <height>50</height>
-      </size>
-     </property>
-    </widget>
     <widget class="QPushButton" name="fan_control_btn">
      <property name="geometry">
       <rect>
        <x>410</x>
-       <y>230</y>
+       <y>170</y>
        <width>301</width>
        <height>87</height>
       </rect>
@@ -409,6 +283,48 @@ border-radius: 10px;</string>
      <property name="icon">
       <iconset resource="Resources.qrc">
        <normaloff>:/build/resources/images/White Icon/fanOn.png</normaloff>:/build/resources/images/White Icon/fanOn.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="lcd_test_btn">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>60</y>
+       <width>301</width>
+       <height>87</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Proxima Nova</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+	border-radius: 10px;
+	background-color: rgb(41, 145, 208);
+	color: rgb(238, 238, 236);
+}
+</string>
+     </property>
+     <property name="text">
+      <string> LCD TEST                    </string>
+     </property>
+     <property name="icon">
+      <iconset resource="Resources.qrc">
+       <normaloff>:/build/resources/images/White Icon/square_squareWhite.png</normaloff>:/build/resources/images/White Icon/square_squareWhite.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -1038,7 +954,7 @@ border: 0px;</string>
            </color>
           </brush>
          </colorrole>
-         <colorrole role="Text">
+         <colorrole role="PlaceholderText">
           <brush brushstyle="NoBrush">
            <color alpha="128">
             <red>255</red>
@@ -1103,7 +1019,7 @@ border: 0px;</string>
            </color>
           </brush>
          </colorrole>
-         <colorrole role="Text">
+         <colorrole role="PlaceholderText">
           <brush brushstyle="NoBrush">
            <color alpha="128">
             <red>255</red>
@@ -1168,7 +1084,7 @@ border: 0px;</string>
            </color>
           </brush>
          </colorrole>
-         <colorrole role="Text">
+         <colorrole role="PlaceholderText">
           <brush brushstyle="NoBrush">
            <color alpha="128">
             <red>255</red>
@@ -1413,7 +1329,7 @@ border: 0px;</string>
            </color>
           </brush>
          </colorrole>
-         <colorrole role="Text">
+         <colorrole role="PlaceholderText">
           <brush brushstyle="NoBrush">
            <color alpha="128">
             <red>255</red>
@@ -1478,7 +1394,7 @@ border: 0px;</string>
            </color>
           </brush>
          </colorrole>
-         <colorrole role="Text">
+         <colorrole role="PlaceholderText">
           <brush brushstyle="NoBrush">
            <color alpha="128">
             <red>255</red>
@@ -1543,7 +1459,7 @@ border: 0px;</string>
            </color>
           </brush>
          </colorrole>
-         <colorrole role="Text">
+         <colorrole role="PlaceholderText">
           <brush brushstyle="NoBrush">
            <color alpha="128">
             <red>255</red>
@@ -6069,6 +5985,27 @@ color: rgb(245, 245, 245);
        <string>k</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="del_button">
+      <property name="geometry">
+       <rect>
+        <x>694</x>
+        <y>170</y>
+        <width>61</width>
+        <height>55</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Proxima Nova</family>
+       </font>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
+      </property>
+      <property name="text">
+       <string>DEL</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QGroupBox" name="number_groupbox">
      <property name="geometry">
@@ -6723,27 +6660,6 @@ color: rgb(245, 245, 245);
       <string>123</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="del_button">
-     <property name="geometry">
-      <rect>
-       <x>630</x>
-       <y>340</y>
-       <width>121</width>
-       <height>55</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <family>Proxima Nova</family>
-      </font>
-     </property>
-     <property name="focusPolicy">
-      <enum>Qt::NoFocus</enum>
-     </property>
-     <property name="text">
-      <string>DEL</string>
-     </property>
-    </widget>
     <widget class="QPushButton" name="symbol_button">
      <property name="geometry">
       <rect>
@@ -6801,7 +6717,6 @@ color: rgb(245, 245, 245);
     <zorder>cancel_button</zorder>
     <zorder>abc_button</zorder>
     <zorder>number_button</zorder>
-    <zorder>del_button</zorder>
     <zorder>symbol_button</zorder>
     <zorder>space_button</zorder>
     <zorder>label_29</zorder>
@@ -8237,20 +8152,6 @@ color: rgb(255, 255, 255);
      </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="black_widget" native="true">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>800</width>
-      <height>480</height>
-     </rect>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(0, 0, 0);
-border-style:none;</string>
-    </property>
-   </widget>
    <zorder>title_menu_widget</zorder>
    <zorder>main_widget</zorder>
    <zorder>control_widget</zorder>
@@ -8270,7 +8171,6 @@ border-style:none;</string>
    <zorder>button_widget</zorder>
    <zorder>manual_menu_widget</zorder>
    <zorder>modify_curing_time_widget</zorder>
-   <zorder>black_widget</zorder>
   </widget>
  </widget>
  <resources>
