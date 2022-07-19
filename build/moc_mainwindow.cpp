@@ -1,19 +1,18 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mainwindow.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.2)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.11.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../mainwindow.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'mainwindow.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.15.2. It"
+#error "This file was generated using the moc from 5.11.3. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -266,7 +265,7 @@ QT_MOC_LITERAL(133, 3007, 8) // "activate"
 static const uint qt_meta_data_MainWindow[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
       97,   14, // methods
@@ -474,9 +473,9 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
 
- // enums: name, alias, flags, count, data
-     106,  106, 0x0,   24,  634,
-     131,  131, 0x0,    2,  682,
+ // enums: name, flags, count, data
+     106, 0x0,   24,  632,
+     131, 0x0,    2,  680,
 
  // enum data: key, value
      107, uint(MainWindow::none),
@@ -512,7 +511,7 @@ static const uint qt_meta_data_MainWindow[] = {
 void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<MainWindow *>(_o);
+        MainWindow *_t = static_cast<MainWindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_print_button_clicked(); break;
@@ -617,14 +616,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject MainWindow::staticMetaObject = { {
-    QMetaObject::SuperData::link<QMainWindow::staticMetaObject>(),
-    qt_meta_stringdata_MainWindow.data,
-    qt_meta_data_MainWindow,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+QT_INIT_METAOBJECT const QMetaObject MainWindow::staticMetaObject = {
+    { &QMainWindow::staticMetaObject, qt_meta_stringdata_MainWindow.data,
+      qt_meta_data_MainWindow,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *MainWindow::metaObject() const
@@ -698,7 +693,7 @@ QT_MOC_LITERAL(14, 253, 28) // "fan_control_cmd_onoff_signal"
 static const uint qt_meta_data_PrintThread[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        9,   14, // methods
@@ -736,7 +731,7 @@ static const uint qt_meta_data_PrintThread[] = {
 void PrintThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<PrintThread *>(_o);
+        PrintThread *_t = static_cast<PrintThread *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->pre_print_cmd_signal(); break;
@@ -818,14 +813,10 @@ void PrintThread::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject PrintThread::staticMetaObject = { {
-    QMetaObject::SuperData::link<QThread::staticMetaObject>(),
-    qt_meta_stringdata_PrintThread.data,
-    qt_meta_data_PrintThread,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+QT_INIT_METAOBJECT const QMetaObject PrintThread::staticMetaObject = {
+    { &QThread::staticMetaObject, qt_meta_stringdata_PrintThread.data,
+      qt_meta_data_PrintThread,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *PrintThread::metaObject() const
@@ -867,14 +858,14 @@ void PrintThread::pre_print_cmd_signal()
 // SIGNAL 1
 void PrintThread::before_layer_cmd_signal(double _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 1, _a);
 }
 
 // SIGNAL 2
 void PrintThread::uv_control_cmd_onoff_signal(bool _t1, QString _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 2, _a);
 }
 
@@ -887,7 +878,7 @@ void PrintThread::after_layer_cmd_signal()
 // SIGNAL 4
 void PrintThread::post_print_cmd_signal(double _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 4, _a);
 }
 
@@ -900,7 +891,7 @@ void PrintThread::update_print_info_signal()
 // SIGNAL 6
 void PrintThread::project_image_mini_signal(QString _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 6, _a);
 }
 
@@ -913,7 +904,7 @@ void PrintThread::project_black_mini_signal()
 // SIGNAL 8
 void PrintThread::fan_control_cmd_onoff_signal(bool _t1, QString _t2)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))), const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t2))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)), const_cast<void*>(reinterpret_cast<const void*>(&_t2)) };
     QMetaObject::activate(this, &staticMetaObject, 8, _a);
 }
 QT_WARNING_POP

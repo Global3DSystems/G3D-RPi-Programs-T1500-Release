@@ -954,7 +954,7 @@ border: 0px;</string>
            </color>
           </brush>
          </colorrole>
-         <colorrole role="PlaceholderText">
+         <colorrole role="Text">
           <brush brushstyle="NoBrush">
            <color alpha="128">
             <red>255</red>
@@ -1019,7 +1019,7 @@ border: 0px;</string>
            </color>
           </brush>
          </colorrole>
-         <colorrole role="PlaceholderText">
+         <colorrole role="Text">
           <brush brushstyle="NoBrush">
            <color alpha="128">
             <red>255</red>
@@ -1084,7 +1084,7 @@ border: 0px;</string>
            </color>
           </brush>
          </colorrole>
-         <colorrole role="PlaceholderText">
+         <colorrole role="Text">
           <brush brushstyle="NoBrush">
            <color alpha="128">
             <red>255</red>
@@ -1329,7 +1329,7 @@ border: 0px;</string>
            </color>
           </brush>
          </colorrole>
-         <colorrole role="PlaceholderText">
+         <colorrole role="Text">
           <brush brushstyle="NoBrush">
            <color alpha="128">
             <red>255</red>
@@ -1394,7 +1394,7 @@ border: 0px;</string>
            </color>
           </brush>
          </colorrole>
-         <colorrole role="PlaceholderText">
+         <colorrole role="Text">
           <brush brushstyle="NoBrush">
            <color alpha="128">
             <red>255</red>
@@ -1459,7 +1459,7 @@ border: 0px;</string>
            </color>
           </brush>
          </colorrole>
-         <colorrole role="PlaceholderText">
+         <colorrole role="Text">
           <brush brushstyle="NoBrush">
            <color alpha="128">
             <red>255</red>
@@ -5985,27 +5985,6 @@ color: rgb(245, 245, 245);
        <string>k</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="del_button">
-      <property name="geometry">
-       <rect>
-        <x>694</x>
-        <y>170</y>
-        <width>61</width>
-        <height>55</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Proxima Nova</family>
-       </font>
-      </property>
-      <property name="focusPolicy">
-       <enum>Qt::NoFocus</enum>
-      </property>
-      <property name="text">
-       <string>DEL</string>
-      </property>
-     </widget>
     </widget>
     <widget class="QGroupBox" name="number_groupbox">
      <property name="geometry">
@@ -6702,6 +6681,27 @@ color: rgb(245, 245, 245);
       <string>space</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="del_button">
+     <property name="geometry">
+      <rect>
+       <x>700</x>
+       <y>340</y>
+       <width>61</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Proxima Nova</family>
+      </font>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="text">
+      <string>DEL</string>
+     </property>
+    </widget>
     <zorder>number_groupbox</zorder>
     <zorder>symbol_groupbox</zorder>
     <zorder>label_28</zorder>
@@ -6720,6 +6720,7 @@ color: rgb(245, 245, 245);
     <zorder>symbol_button</zorder>
     <zorder>space_button</zorder>
     <zorder>label_29</zorder>
+    <zorder>del_button</zorder>
    </widget>
    <widget class="QWidget" name="theme_selection_widget" native="true">
     <property name="geometry">

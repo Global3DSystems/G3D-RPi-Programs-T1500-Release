@@ -1,19 +1,18 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'httplistener.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.2)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.11.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../QtWebApp/QtWebApp/httpserver/httplistener.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'httplistener.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.15.2. It"
+#error "This file was generated using the moc from 5.11.3. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -47,7 +46,7 @@ QT_MOC_LITERAL(4, 63, 16) // "socketDescriptor"
 static const uint qt_meta_data_stefanfrings__HttpListener[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        1,   14, // methods
@@ -69,7 +68,7 @@ static const uint qt_meta_data_stefanfrings__HttpListener[] = {
 void stefanfrings::HttpListener::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<HttpListener *>(_o);
+        HttpListener *_t = static_cast<HttpListener *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->handleConnection((*reinterpret_cast< tSocketDescriptor(*)>(_a[1]))); break;
@@ -87,14 +86,10 @@ void stefanfrings::HttpListener::qt_static_metacall(QObject *_o, QMetaObject::Ca
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject stefanfrings::HttpListener::staticMetaObject = { {
-    QMetaObject::SuperData::link<QTcpServer::staticMetaObject>(),
-    qt_meta_stringdata_stefanfrings__HttpListener.data,
-    qt_meta_data_stefanfrings__HttpListener,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+QT_INIT_METAOBJECT const QMetaObject stefanfrings::HttpListener::staticMetaObject = {
+    { &QTcpServer::staticMetaObject, qt_meta_stringdata_stefanfrings__HttpListener.data,
+      qt_meta_data_stefanfrings__HttpListener,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *stefanfrings::HttpListener::metaObject() const
@@ -130,7 +125,7 @@ int stefanfrings::HttpListener::qt_metacall(QMetaObject::Call _c, int _id, void 
 // SIGNAL 0
 void stefanfrings::HttpListener::handleConnection(tSocketDescriptor _t1)
 {
-    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP

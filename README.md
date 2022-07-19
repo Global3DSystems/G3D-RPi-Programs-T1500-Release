@@ -1,33 +1,54 @@
-![G3D logo](documentation/images/g3d_logo.png)
+# G3D-RPi-Programs
 
-# G3D-RPi-Programs-T1500
-This is the public respository of the released version of programs 
-for G3D T1500 Printer in Raspberry Pi. It is used for updating the
-printer via USB update or over the air update.
+![G3D-Logo](/documentation/images/g3d_logo.png?raw=true)
 
-### How to Update via USB?
+### About
+This repository contains the rework for the 
+programs in Raspberry Pi for G3D T2000 Printer.
 
-* Download this repository by clicking the green "Code" button in the upper left
-section of this page then selecting "Download zip".
-* Format your flash drive as either FAT or exFAT. We haven't tested yet other file systems.
-* Copy the file in the root of the flash drive. 
-* Do not rename the filename.It must be exactly "G3D-RPi-Programs-T15000-Release-master.zip". If you downloaded this multiple times,
-it may appear as "G3D-RPi-Programs-T15000-Release-master.zip(1)". File name must be exactly "G3D-RPi-Programs-T15000-Release-master.zip" only.
-* The printer must be initially turned off.
-* Insert the flash drive then turn on the printer.
-* The printer will make 2 beep sounds when it detected the update file then it will start updating.
-* When the update is successful, the printer will also make 2 beep sounds then automatically shutdowns.
-* Remove the flash drive and turn on the printer again to use the updated software. Delete the update file in the flash drive so it won't be read again by the printer when you use it.
-* The printer will make one long beep every time the program starts which means you can connect to it now via hotspot or your local network.
+### Build using QtCreator
+* This is build using Qt 5.12 in QtCreator.
+* To build it, you need to download Qt Creator
+and Qt 5.12.
+* Build directory should be set as ***./build***
+and it should be in release mode, refer to the
+image below.
 
-#
+![Build-Image](/documentation/images/build.png?raw=true)
 
-### How to Update via Over the Air?
+### Build using Ubuntu/RPi Terminal
+* First, navigate to the build folder of the repository. Example:
+* ```cd /home/pi/G3D-RPi-Programs/build``` 
+* Then, follow the rest of the command
+* ```qmake ../G3D-RPi-Programs.pro``` 
+* ```make clean```
+* ```make```
 
-* G3D T1500 Printer has no touch screen. There is no interface for cloud update so it is not supported.
-#
+### Build for Release in RPi
+* Clone this repository to /home/pi by running the following commands:
+* ```cd ~```
+* ```git clone https://github.com/Global3DSystems/G3D-RPi-Programs.git```
+* We need to rename the folder G3D-RPi-Programs to G3D-RPi-Programs-Release-master 
+because its what the USB/OTA update and script program expects to start/update
+the program. Use the command:
+* ```mv G3D-RPi-Programs G3D-RPi-Programs-Release-master```
+* Build it using the steps previously in the terminal.
+* Delete .cpp and .h files. (To update documentation to create a script to automate the proces of deleting and pushing it to the separate public update repository.)
+ 
+### Development to Release Additional Build Steps
 
-### My updates failed, what to do?
-
-* If the usb update has been interrupted due to power interruption, 
-you can simply update it again by just turning on the printer and the usb plugged in.
+This step should always be done when shifting from development side to testing side in the actual printer with printer serial FW connected.
+* Change the USB path and serial port name to RPi compatible values in readwriteconfig.cpp
+* Comment the delay in ```PrintThread::run``` at the end of the loop since this is inserted for development purposes.
+* Replace ```show()``` by ```showFullScreen()``` in the ```PrintThread``` class for the ```projection_window``` variable.
+* Resize the ```projection_window``` variable to (1,1) in ```PrintThread``` class.
+* To summarize the step above, perform a Ctrl+Shift+F (search all) for "[DEV-NOTE]" string to find all the lines of code needed  for the steps above for shorcut. Comments are placed throughout the code.
+* Uncomment all the serial commands needed. This can be found also by performing a Ctrl+Shift+F (search all) for "[SERIAL COMMAND]" string.
+* Test the print in actual printer to see if it is properly configured.
+* Test all functionality sequence.
+ 
+### Merge Conflicts
+* All ```.user``` and ```.user.random_number``` are
+automatically generated, just ignore the merge conflict,
+build it and if you are able to run it, you can pull/push
+it to the repository.

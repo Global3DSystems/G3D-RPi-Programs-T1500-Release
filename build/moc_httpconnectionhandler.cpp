@@ -1,19 +1,18 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'httpconnectionhandler.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.2)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.11.3)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
 #include "../QtWebApp/QtWebApp/httpserver/httpconnectionhandler.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'httpconnectionhandler.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.15.2. It"
+#error "This file was generated using the moc from 5.11.3. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -53,7 +52,7 @@ QT_MOC_LITERAL(8, 119, 11) // "thread_done"
 static const uint qt_meta_data_stefanfrings__HttpConnectionHandler[] = {
 
  // content:
-       8,       // revision
+       7,       // revision
        0,       // classname
        0,    0, // classinfo
        5,   14, // methods
@@ -83,7 +82,7 @@ static const uint qt_meta_data_stefanfrings__HttpConnectionHandler[] = {
 void stefanfrings::HttpConnectionHandler::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<HttpConnectionHandler *>(_o);
+        HttpConnectionHandler *_t = static_cast<HttpConnectionHandler *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->handleConnection((*reinterpret_cast< const tSocketDescriptor(*)>(_a[1]))); break;
@@ -96,14 +95,10 @@ void stefanfrings::HttpConnectionHandler::qt_static_metacall(QObject *_o, QMetaO
     }
 }
 
-QT_INIT_METAOBJECT const QMetaObject stefanfrings::HttpConnectionHandler::staticMetaObject = { {
-    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
-    qt_meta_stringdata_stefanfrings__HttpConnectionHandler.data,
-    qt_meta_data_stefanfrings__HttpConnectionHandler,
-    qt_static_metacall,
-    nullptr,
-    nullptr
-} };
+QT_INIT_METAOBJECT const QMetaObject stefanfrings::HttpConnectionHandler::staticMetaObject = {
+    { &QObject::staticMetaObject, qt_meta_stringdata_stefanfrings__HttpConnectionHandler.data,
+      qt_meta_data_stefanfrings__HttpConnectionHandler,  qt_static_metacall, nullptr, nullptr}
+};
 
 
 const QMetaObject *stefanfrings::HttpConnectionHandler::metaObject() const
