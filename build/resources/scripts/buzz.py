@@ -3,7 +3,7 @@ import RPi.GPIO as GPIO
 import time
 
 # Usage: python3 buzz.py num_beeps interval_sec 0
-
+# Test Phase 2
 num_beeps = int(sys.argv[1])
 interval_sec = float(sys.argv[2])
 is_pwm = int(sys.argv[3])
